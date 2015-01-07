@@ -42,6 +42,7 @@ class FacebookStrategy extends OpauthStrategy{
 		if (!empty($this->strategy['response_type'])) $params['response_type'] = $this->strategy['response_type'];
 		if (!empty($this->strategy['display'])) $params['display'] = $this->strategy['display'];
 		if (!empty($this->strategy['auth_type'])) $params['auth_type'] = $this->strategy['auth_type'];
+		if (!empty($this->strategy['canvas'])) $params['canvas'] = $this->strategy['canvas'];
 		
 		$this->clientGet($url, $params);
 	}
